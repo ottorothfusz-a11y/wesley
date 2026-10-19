@@ -1,0 +1,11 @@
+Prove Potential Coaching - website
+
+Upload de inhoud van deze map naar je hosting (bijv. Netlify, Vercel of je eigen server).
+index.html is de homepage, alle beelden en video's staan in /media.
+
+Nog in te vullen voor livegang:
+- Instagram-link (zoek op "instagram.com/" in index.html)
+- Links naar Algemene voorwaarden en Privacyverklaring (footer, nu "#")
+- Herroepingsformulier koppelen aan een formulierdienst die automatisch
+  een bevestigingsmail stuurt (nu toont het alleen een tekst om te kopieren)
+- Intake-link controleren: https://provepotentialcoaching.kohort.nl
