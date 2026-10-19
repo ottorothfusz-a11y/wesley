@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Prove Potential site, versie 2026-10-19 05:59 -->
 <html lang="nl">
 <head>
 <meta charset="utf-8">
@@ -297,8 +298,8 @@ dialog::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
 </nav>
 
 <header class="hero" id="top">
-  <img class="poster" src="media/loop_poster.jpg" alt="" aria-hidden="true">
-  <video id="loop" data-src="media/loop.mp4" poster="media/loop_poster.jpg" muted loop playsinline aria-hidden="true"></video>
+  <img class="poster" src="loop_poster.jpg" alt="" aria-hidden="true">
+  <video id="loop" data-src="loop.mp4" poster="loop_poster.jpg" muted loop playsinline aria-hidden="true"></video>
   <div class="wrap">
     <h1>Bewijs wat<br>erin zit.</h1>
     <p>1-op-1 online coaching in training en voeding. Van de coach die zelf het dunne jongetje van de klas was.</p>
@@ -359,7 +360,7 @@ dialog::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
     <h2>Turning bad habits into extreme focus on one goal.</h2>
     <p class="sub">Het verhaal in 77 seconden. Met geluid.</p>
     <div class="player">
-      <video id="film" data-src="media/film.mp4" poster="media/film_poster.jpg" playsinline></video>
+      <video id="film" data-src="film.mp4" poster="film_poster.jpg" playsinline></video>
       <button class="play" id="playFilm" aria-label="Speel de film af"><span><i><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg></i>Bekijk de film</span></button>
     </div>
     <div class="quote">
@@ -371,7 +372,7 @@ dialog::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
 
 <section class="about" id="over">
   <div class="wrap grid">
-    <div class="portrait"><img src="media/still_61.jpg" alt="Wesley traint biceps in de gym" loading="lazy"></div>
+    <div class="portrait"><img src="still_61.jpg" alt="Wesley traint biceps in de gym" loading="lazy"></div>
     <div>
       <h2 class="h2">Ik pak dingen extreem aan.</h2>
       <p class="body">Vroeger was dat mijn valkuil. Nu is het mijn kracht: heb ik een doel, dan krijgt het al mijn focus. Bodybuilding gaf me structuur. Slaap, voeding en training op orde, dan loopt de rest van je leven ook beter. Precies dat bouw ik met jou op.</p>
@@ -437,7 +438,7 @@ dialog::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
         <div class="panel" id="p3" role="tabpanel" aria-labelledby="t3">
           <h4>Check-in week 6</h4>
           <p class="k">Binnen 09:12 · feedback verstuurd 15:40</p>
-          <div class="loom"><img src="media/still_66.5.jpg" alt="" loading="lazy"><div class="bar"><i><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg></i><span>4:32</span></div></div>
+          <div class="loom"><img src="still_66.5.jpg" alt="" loading="lazy"><div class="bar"><i><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg></i><span>4:32</span></div></div>
           <div class="rows">
             <div><span>Wat ging goed</span><span>01</span></div>
             <div><span>Wat opvalt in je cijfers</span><span>02</span></div>
@@ -543,7 +544,7 @@ dialog::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
 <section class="end" style="padding-top:0;padding-bottom:0">
   <div class="wrap">
     <div class="box">
-      <img src="media/still_71.5.jpg" alt="" loading="lazy">
+      <img src="still_71.5.jpg" alt="" loading="lazy">
       <h2>Klaar om te bewijzen wat erin zit?</h2>
       <p>Begin met de vragenlijst. Tien minuten, en daarna plannen we een gesprek.</p>
       <div class="ctas">
@@ -638,11 +639,11 @@ const track=$('#track'),bars=$('#bars'),thumbs=$('#thumbs'),viewer=$('#viewer'),
 S.forEach((s,i)=>{
   const n=String(i+1).padStart(2,'0');
   const f=document.createElement('figure');
-  f.innerHTML=`<img src="media/j${n}.jpg" alt="${s[2]}: ${s[3]}" ${i>1?'loading="lazy"':''} draggable="false">`;
+  f.innerHTML=`<img src="j${n}.jpg" alt="${s[2]}: ${s[3]}" ${i>1?'loading="lazy"':''} draggable="false">`;
   track.appendChild(f);
   bars.appendChild(document.createElement('span'));
   const b=document.createElement('button');b.type='button';b.setAttribute('aria-label',`${n}: ${s[2]}`);
-  b.innerHTML=`<img src="media/j${n}.jpg" alt="" loading="lazy">`;b.onclick=()=>go(i);thumbs.appendChild(b);
+  b.innerHTML=`<img src="j${n}.jpg" alt="" loading="lazy">`;b.onclick=()=>go(i);thumbs.appendChild(b);
 });
 let cur=0;
 function go(i,fromDrag){
